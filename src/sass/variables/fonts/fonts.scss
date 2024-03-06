@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Itim&family=Julius+Sans+One&display=swap');
+
+$main-font:"Julius Sans One", sans-serif;
+$common-font:"Archivo", sans-serif;
+$subtitle-font:"Itim", sans-serif;
+
+.main-font{
+  font-family: $main-font;
+}
+
+.common-font{
+  font-family: $common-font;
+}
+
+.subtitle-font{
+  font-family: $subtitle-font;
+}

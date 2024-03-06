@@ -1,0 +1,60 @@
+.header{
+  position: sticky;
+  height: 7rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  width: 100%;
+  box-shadow: 0 .1rem .5rem .01rem #21212163;
+  .navbar{
+    max-width: 1240px;
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    .register-button-div{
+      gap: .5rem;
+      display: flex;
+      align-items: center;
+      border: .2rem solid transparent;
+      cursor: pointer;
+      padding: .5rem 1.25rem;
+      position: relative;
+      transition: width color .5s ease-in-out;
+
+      .register-button{
+        text-decoration: none;
+        color: $light-font;
+        font-size: 1.4rem;
+        transition: .3s ease-in-out;
+
+      }
+
+      &::before{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background-color: $main-yellow-color;
+        width: 0;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        transition: width .5s ease-in-out;
+      }
+
+      &:hover::before{
+        width: 100%;
+      }
+      &:hover{
+        border: .2rem solid $main-yellow-color;
+        border-radius: .5rem;
+        .register-button{
+          color: $dark-font;
+        }
+      }
+    }
+  }
+}
