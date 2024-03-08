@@ -198,6 +198,52 @@
   width: 10rem;
   height: auto;
 }
+.main-content .start-block .see-more-button {
+  width: max-content;
+  padding: 0.5rem 1.25rem;
+  margin-top: 2rem;
+  border: 0.2rem solid #F5D904;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: #f1f1f1;
+  background-color: transparent;
+  font-size: 1.4rem;
+  transition: all 0.3s ease-in-out;
+}
+.main-content .start-block .see-more-button:hover {
+  color: #222;
+  background-color: #F5D904;
+  transform: scale(1.1);
+}
+.main-content .speakers {
+  width: 100%;
+}
+.main-content .speakers .carousel {
+  width: 100%;
+  overflow: auto;
+}
+.main-content .speakers .carousel .carousel-wrapper {
+  width: 200%;
+  gap: 3rem;
+}
+.main-content .speakers .carousel .carousel-wrapper .carouseul-items {
+  width: 33%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  backdrop-filter: blur(1rem);
+  border: 0.1rem solid #f1f1f1;
+  position: relative;
+}
+.main-content .speakers .carousel .carousel-wrapper .carouseul-items .glass-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: blur(1rem);
+  top: 0;
+  left: 0;
+}
 
 * {
   padding: 0;
@@ -227,6 +273,17 @@ body {
 
 .display-flex {
   display: flex;
+}
+
+.glass-background {
+  background: transparent;
+  width: 100%;
+  backdrop-filter: blur(0.5rem);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=style.css.map */

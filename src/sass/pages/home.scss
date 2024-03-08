@@ -1,5 +1,3 @@
-$image-path: "../../images";
-
 .header{
   position: sticky;
   height: 7rem;
@@ -20,6 +18,7 @@ $image-path: "../../images";
     left: 0;
     z-index: -1;
   }
+
   .navbar{
     max-width: 1240px;
     width: 100%;
@@ -29,6 +28,7 @@ $image-path: "../../images";
     justify-content: space-between;
     align-items: center;
     height: 100%;
+
     .register-button-div{
       gap: .5rem;
       display: flex;
@@ -154,6 +154,58 @@ $image-path: "../../images";
       img{
         width: 10rem;
         height: auto;
+      }
+    }
+
+    .see-more-button{
+      width: max-content;
+      padding: .5rem 1.25rem;
+      margin-top: 2rem;
+      border: .2rem solid $main-yellow-color;
+      cursor: pointer;
+      border-radius: .5rem;
+      text-decoration: none;
+      color: $light-font;
+      background-color: transparent;
+      font-size: 1.4rem;
+      transition: all .3s ease-in-out;
+
+      &:hover{
+        color: $dark-font;
+        background-color: $main-yellow-color;
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .speakers{
+    width: 100%;
+
+    .carousel{
+      width: 100%;
+      overflow: auto;
+
+      .carousel-wrapper{
+        width: 200%;
+        gap: 3rem;
+        .carouseul-items{
+          width: 33%;
+          padding: 1rem;
+          border-radius: .5rem;
+          background: transparent;
+          backdrop-filter: blur(1rem);
+          border: .1rem solid $light-font;
+          position: relative;
+
+          .glass-background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            filter: blur(1rem);
+            top: 0;
+            left: 0;
+          }
+        }
       }
     }
   }
