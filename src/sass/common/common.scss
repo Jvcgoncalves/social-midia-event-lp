@@ -27,13 +27,12 @@ body{
   display: flex;
 }
 
-.glass-background{
-  background: transparent;
-  width: 100%;
-  backdrop-filter: blur(.5rem)  ;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+::-webkit-scrollbar{
+  width: .5rem;
+  background-color: $box-background-color;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: $main-yellow-color;
+  border-radius: 1rem;
 }
