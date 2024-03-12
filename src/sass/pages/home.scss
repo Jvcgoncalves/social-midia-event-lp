@@ -4,7 +4,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  width: 100%;
   z-index: 1000;
   box-shadow: 0 .1rem .5rem .01rem #21212163;
 
@@ -20,7 +19,7 @@
   }
 
   .navbar{
-    max-width: 1240px;
+    max-width: 92.5%;
     width: 100%;
     display: flex;
     padding: 1rem 0;
@@ -168,45 +167,171 @@
       color: $light-font;
       background-color: transparent;
       font-size: 1.4rem;
-      transition: all .3s ease-in-out;
+      transition: all .5s ease-in-out;
 
       &:hover{
         color: $dark-font;
         background-color: $main-yellow-color;
         transform: scale(1.1);
+        animation: .5s swingAndGrow 2 .5s  normal linear, .5s grow 2 1.5s normal linear;
       }
     }
   }
 
   .speakers{
     width: 100%;
+    height: 80vh;
+    height: 80dvh;
+    position: relative;
 
+    h2{
+      color: $light-font;
+      font-size: 1.75rem;
+      font-weight: 300;
+      margin-bottom: 1rem;
+    }
     .carousel{
-      width: 100%;
-      overflow: auto;
-
+      height: 80%;
+      
       .carousel-wrapper{
-        width: 200%;
-        gap: 3rem;
-        .carouseul-items{
-          width: 33%;
-          padding: 1rem;
-          border-radius: .5rem;
-          background: transparent;
-          backdrop-filter: blur(1rem);
-          border: .1rem solid $light-font;
-          position: relative;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 1rem;
+        height: 100%;
+        width: 90%;
+        margin: auto;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
 
-          .glass-background {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            filter: blur(1rem);
-            top: 0;
-            left: 0;
-          }
+        scroll-snap-type: x mandatory;
+        &::-webkit-scrollbar{
+          display: none;
         }
+
+        // scroll-snap-align: start;
+        .carousel-items{
+          flex-shrink: 0;
+          border: .15rem solid #3D3601;
+          width: 25rem;
+          height: 100%;
+          padding: 1rem;
+          background-color: $box-background-color;
+
+          &:first-child{
+            margin-left: 32.5%;
+          }
+          &:last-child{
+            margin-right: 32.5%;
+          }
+
+          h2{
+            font-size: 1.5rem;
+            margin: 1rem 0 .5rem 0;
+            font-weight: 500;
+
+          }
+
+          p{
+            font-size: 1.1rem;
+            color: $light-font;
+            font-weight: 100;
+          }
+
+          .speaker-img-div{
+            width: max-content;
+            img{
+              object-fit: cover;
+            }
+            &:hover{
+              img{
+                transition: .75s;
+                transform: rotateY(360deg);
+              }
+            }
+          }
+        } // . carousel-items
+      }
+    } // .carousel
+
+    .carousel-nav{
+      display: flex;
+      margin: 1rem 0;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      gap: 1rem;
+      width: 100%;
+      justify-content: center;
+
+      .carousel-input{
+        visibility: hidden;
+        display: none;
+      }
+      .carousel-label{
+        height: .25rem;
+        width: 2rem;
+        background-color: $light-font;
+        cursor: pointer;
+        &.active{
+          background-color: $main-yellow-color;
+        }
+      }
+    } // .carousel-nav
+
+    #next-button,#prev-button{
+      position: absolute;
+      bottom: 50%;
+      cursor: pointer;
+      img{
+        width: 1.5rem;
+        height: 1.75rem;
+      }
+    }
+    #next-button{
+      right: 0;
+    }
+
+    #prev-button{
+      left: 0;
+      transform: rotate(180deg);
+    }
+  }
+
+  .event-description{
+    
+    h2{
+      color: $light-font;
+      font-size: 1.75rem;
+      font-weight: 300;
+    }
+    .description-content{
+      max-width: 90%;
+      gap: 1rem;
+      margin-top: 1rem;
+      p{
+        width: 50%;
+        color: $light-font;
+        font-size: 1rem;
+        font-weight: 300;
       }
     }
   }
+} // .main-content
+
+.footter{
+  width: 100%;
+  background-color: $main-yellow-color;
+  display: block;
+  margin-top: 4rem;
+
+  .display-flex{
+    justify-content: space-between;
+    padding: 1rem 0;
+    color: $dark-font;
+    font-size: 1rem;
+    align-items: center;
+  }
 }
+
