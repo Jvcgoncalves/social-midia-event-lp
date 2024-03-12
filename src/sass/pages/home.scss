@@ -4,7 +4,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  width: 100%;
   z-index: 1000;
   box-shadow: 0 .1rem .5rem .01rem #21212163;
 
@@ -20,7 +19,7 @@
   }
 
   .navbar{
-    max-width: 1240px;
+    max-width: 92.5%;
     width: 100%;
     display: flex;
     padding: 1rem 0;
@@ -181,19 +180,19 @@
 
   .speakers{
     width: 100%;
-    height: 75vh;
-    height: 75dvh;
+    height: 80vh;
+    height: 80dvh;
     position: relative;
 
     h2{
       color: $light-font;
       font-size: 1.75rem;
       font-weight: 300;
+      margin-bottom: 1rem;
     }
     .carousel{
-      height: 85%;
+      height: 80%;
       
-
       .carousel-wrapper{
         display: flex;
         flex-flow: row nowrap;
@@ -214,16 +213,17 @@
         // scroll-snap-align: start;
         .carousel-items{
           flex-shrink: 0;
-          border: .2rem solid $box-background-color;
+          border: .15rem solid #3D3601;
           width: 25rem;
           height: 100%;
           padding: 1rem;
+          background-color: $box-background-color;
 
           &:first-child{
-            margin-left: 45%;
+            margin-left: 32.5%;
           }
           &:last-child{
-            margin-right: 45%;
+            margin-right: 32.5%;
           }
 
           h2{
@@ -241,6 +241,9 @@
 
           .speaker-img-div{
             width: max-content;
+            img{
+              object-fit: cover;
+            }
             &:hover{
               img{
                 transition: .75s;
@@ -248,7 +251,7 @@
               }
             }
           }
-        }
+        } // . carousel-items
       }
     } // .carousel
 
@@ -275,7 +278,8 @@
           background-color: $main-yellow-color;
         }
       }
-    }
+    } // .carousel-nav
+
     #next-button,#prev-button{
       position: absolute;
       bottom: 50%;
@@ -321,10 +325,13 @@
   background-color: $main-yellow-color;
   display: block;
   margin-top: 4rem;
+
   .display-flex{
     justify-content: space-between;
     padding: 1rem 0;
     color: $dark-font;
     font-size: 1rem;
+    align-items: center;
   }
 }
+

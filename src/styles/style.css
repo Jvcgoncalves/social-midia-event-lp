@@ -69,7 +69,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  width: 100%;
   z-index: 1000;
   box-shadow: 0 0.1rem 0.5rem 0.01rem rgba(33, 33, 33, 0.3882352941);
 }
@@ -84,7 +83,7 @@
   z-index: -1;
 }
 .header .navbar {
-  max-width: 1240px;
+  max-width: 92.5%;
   width: 100%;
   display: flex;
   padding: 1rem 0;
@@ -236,17 +235,18 @@
 }
 .main-content .speakers {
   width: 100%;
-  height: 75vh;
-  height: 75dvh;
+  height: 80vh;
+  height: 80dvh;
   position: relative;
 }
 .main-content .speakers h2 {
   color: #f1f1f1;
   font-size: 1.75rem;
   font-weight: 300;
+  margin-bottom: 1rem;
 }
 .main-content .speakers .carousel {
-  height: 85%;
+  height: 80%;
 }
 .main-content .speakers .carousel .carousel-wrapper {
   display: flex;
@@ -266,16 +266,17 @@
 }
 .main-content .speakers .carousel .carousel-wrapper .carousel-items {
   flex-shrink: 0;
-  border: 0.2rem solid #333;
+  border: 0.15rem solid #3D3601;
   width: 25rem;
   height: 100%;
   padding: 1rem;
+  background-color: #333;
 }
 .main-content .speakers .carousel .carousel-wrapper .carousel-items:first-child {
-  margin-left: 45%;
+  margin-left: 32.5%;
 }
 .main-content .speakers .carousel .carousel-wrapper .carousel-items:last-child {
-  margin-right: 45%;
+  margin-right: 32.5%;
 }
 .main-content .speakers .carousel .carousel-wrapper .carousel-items h2 {
   font-size: 1.5rem;
@@ -289,6 +290,9 @@
 }
 .main-content .speakers .carousel .carousel-wrapper .carousel-items .speaker-img-div {
   width: max-content;
+}
+.main-content .speakers .carousel .carousel-wrapper .carousel-items .speaker-img-div img {
+  object-fit: cover;
 }
 .main-content .speakers .carousel .carousel-wrapper .carousel-items .speaker-img-div:hover img {
   transition: 0.75s;
@@ -361,6 +365,7 @@
   padding: 1rem 0;
   color: #222;
   font-size: 1rem;
+  align-items: center;
 }
 
 * {
@@ -380,7 +385,7 @@ body {
 }
 
 .container-body {
-  max-width: 1240px;
+  max-width: 90%;
   width: 100%;
 }
 
@@ -401,6 +406,300 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: #F5D904;
   border-radius: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .main-content .start-block .impact-phrase-div .impact-phrase {
+    font-size: 1.3rem;
+  }
+  .main-content .start-block .slogan .first-slogan-part, .main-content .start-block .slogan .second-slogan-part {
+    font-size: 4rem;
+  }
+  .main-content .start-block .slogan img {
+    width: 7.5rem;
+    height: auto;
+  }
+  .main-content .start-block .see-more-button {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+  }
+  .main-content .speakers h2 {
+    font-size: 1.5rem;
+  }
+  .main-content .speakers .carousel .carousel-wrapper .carousel-items {
+    height: 95%;
+  }
+  .main-content .speakers .carousel .carousel-wrapper .carousel-items h2 {
+    font-size: 1.3rem;
+  }
+  .main-content .speakers .carousel .carousel-wrapper .carousel-items p {
+    font-size: 1rem;
+  }
+  .main-content .speakers .carousel .carousel-wrapper .carousel-items:first-child {
+    margin-left: 25%;
+  }
+  .main-content .speakers .carousel .carousel-wrapper .carousel-items:last-child {
+    margin-right: 25%;
+  }
+  .main-content .speakers .carousel .carousel-wrapper .carousel-items .speaker-img-div img {
+    width: 7rem;
+  }
+  .main-content .speakers .carousel-nav {
+    gap: 1.5rem;
+  }
+  .main-content .speakers .carousel-nav .carousel-label {
+    width: 1.75rem;
+  }
+}
+@media (max-width: 768px) {
+  .main-content .start-block .impact-phrase-div .impact-phrase {
+    font-size: 1.1rem;
+  }
+  .main-content .start-block .slogan .first-slogan-part, .main-content .start-block .slogan .second-slogan-part {
+    font-size: 3rem;
+  }
+  .main-content .start-block .slogan img {
+    width: 6rem;
+    height: auto;
+  }
+  .main-content .start-block .see-more-button {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+  }
+  .main-content .speakers {
+    margin-bottom: 2rem;
+  }
+  .main-content .speakers h2 {
+    font-size: 1.5rem;
+  }
+  .main-content .speakers .carousel {
+    height: 90%;
+  }
+  .main-content .speakers .carousel .carousel-wrapper .carousel-items {
+    height: 100%;
+    width: 16rem;
+  }
+  .main-content .speakers .carousel .carousel-wrapper .carousel-items h2 {
+    font-size: 1.3rem;
+  }
+  .main-content .speakers .carousel .carousel-wrapper .carousel-items p {
+    font-size: 1rem;
+  }
+  .main-content .speakers .carousel .carousel-wrapper .carousel-items:first-child {
+    margin-left: 25%;
+  }
+  .main-content .speakers .carousel .carousel-wrapper .carousel-items:last-child {
+    margin-right: 25%;
+  }
+  .main-content .speakers .carousel .carousel-wrapper .carousel-items .speaker-img-div img {
+    width: 6rem;
+  }
+  .main-content .speakers .carousel-nav {
+    display: none;
+    gap: 1.5rem;
+  }
+  .main-content .speakers .carousel-nav .carousel-label {
+    width: 1.75rem;
+  }
+  .main-content .event-description h2 {
+    color: #f1f1f1;
+    font-size: 1.75rem;
+    font-weight: 300;
+  }
+}
+@media (max-width: 578px) {
+  .header {
+    height: 6rem;
+  }
+  .header .navbar .register-button-div .register-button {
+    font-size: 1.25rem;
+  }
+  .header .navbar .register-button-div .register-arrow {
+    width: 1rem;
+    height: 1rem;
+  }
+  .header .navbar .register-button-div:hover {
+    border: 0.2rem solid #F5D904;
+  }
+  .header .navbar .register-button-div:hover .register-button {
+    color: #222;
+  }
+  .header .navbar .register-button-div:hover .register-arrow {
+    background-image: url("../images/arrow_black.svg");
+  }
+  .header .navbar .logo {
+    width: 2.75rem;
+    height: auto;
+  }
+  .main-content .start-block {
+    height: 70vh;
+    height: 70dvh;
+  }
+  .main-content .start-block .impact-phrase-div .impact-phrase {
+    font-size: 1rem;
+  }
+  .main-content .start-block .slogan .first-slogan-part, .main-content .start-block .slogan .second-slogan-part {
+    font-size: 2.25rem;
+  }
+  .main-content .start-block .slogan img {
+    width: 4.5rem;
+    height: auto;
+  }
+  .main-content .start-block .see-more-button {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+  }
+  .main-content .speakers {
+    margin-bottom: 2rem;
+    height: 70vh;
+    height: 70dvh;
+  }
+  .main-content .speakers h2 {
+    font-size: 1.3rem;
+  }
+  .main-content .speakers .carousel {
+    height: 90%;
+  }
+  .main-content .speakers .carousel .carousel-wrapper .carousel-items {
+    height: 100%;
+    width: 16rem;
+  }
+  .main-content .speakers .carousel .carousel-wrapper .carousel-items h2 {
+    font-size: 1.3rem;
+  }
+  .main-content .speakers .carousel .carousel-wrapper .carousel-items p {
+    font-size: 1rem;
+  }
+  .main-content .speakers .carousel .carousel-wrapper .carousel-items:first-child {
+    margin-left: 15%;
+  }
+  .main-content .speakers .carousel .carousel-wrapper .carousel-items:last-child {
+    margin-right: 15%;
+  }
+  .main-content .speakers .carousel .carousel-wrapper .carousel-items .speaker-img-div img {
+    width: 6rem;
+  }
+  .main-content .speakers .carousel-nav {
+    display: none;
+    gap: 1.5rem;
+  }
+  .main-content .speakers .carousel-nav .carousel-label {
+    width: 1.75rem;
+  }
+  .main-content .event-description h2 {
+    color: #f1f1f1;
+    font-size: 1.75rem;
+    font-weight: 300;
+  }
+  .main-content .event-description .description-content {
+    flex-direction: column;
+  }
+  .main-content .event-description .description-content p {
+    width: 100%;
+    color: #f1f1f1;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 578px) {
+  .header .navbar .logo {
+    width: 2.5rem;
+    height: auto;
+  }
+  .main-content .start-block {
+    height: 55vh;
+    height: 55dvh;
+  }
+  .main-content .start-block .impact-phrase-div {
+    margin-right: 0.5rem;
+  }
+  .main-content .start-block .impact-phrase-div .impact-phrase {
+    font-size: 0.9rem;
+  }
+  .main-content .start-block .slogan .first-slogan-part, .main-content .start-block .slogan .second-slogan-part {
+    font-size: 1.75rem;
+  }
+  .main-content .start-block .slogan img {
+    width: 3.5rem;
+    height: auto;
+  }
+  .main-content .start-block .see-more-button {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+  }
+  .main-content .speakers h2 {
+    font-size: 1.5rem;
+  }
+  .main-content .speakers .carousel {
+    height: 90%;
+  }
+  .main-content .speakers .carousel .carousel-wrapper .carousel-items {
+    height: 100%;
+    width: 15rem;
+  }
+  .main-content .speakers .carousel .carousel-wrapper .carousel-items h2 {
+    font-size: 1.2rem;
+  }
+  .main-content .speakers .carousel .carousel-wrapper .carousel-items p {
+    font-size: 0.9rem;
+  }
+  .main-content .speakers .carousel .carousel-wrapper .carousel-items:first-child {
+    margin-left: 3%;
+  }
+  .main-content .speakers .carousel .carousel-wrapper .carousel-items:last-child {
+    margin-right: 3%;
+  }
+  .main-content .speakers .carousel .carousel-wrapper .carousel-items .speaker-img-div img {
+    width: 5rem;
+  }
+  .main-content .event-description h2 {
+    color: #f1f1f1;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  .main-content .event-description .description-content {
+    flex-direction: column;
+  }
+  .main-content .event-description .description-content p {
+    width: 100%;
+    color: #f1f1f1;
+    font-size: 0.9rem;
+  }
+  .footter {
+    margin-top: 3rem;
+  }
+  .footter .display-flex {
+    font-size: 0.75rem;
+    word-wrap: break-word;
+  }
+}
+@media (max-width: 325px) {
+  .main-content .start-block .slogan .first-slogan-part, .main-content .start-block .slogan .second-slogan-part {
+    font-size: 1.5rem;
+  }
+  .main-content .start-block .slogan img {
+    width: 3rem;
+    height: auto;
+  }
+  .main-content .speakers h2 {
+    font-size: 1.2rem;
+  }
+  .main-content .speakers .carousel {
+    height: 90%;
+  }
+  .main-content .speakers .carousel .carousel-wrapper .carousel-items {
+    height: 85%;
+  }
+  .main-content .speakers #next-button, .main-content .speakers #prev-button {
+    bottom: 0;
+  }
+  .main-content .event-description h2 {
+    color: #f1f1f1;
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  .footter .logo {
+    width: 2.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
