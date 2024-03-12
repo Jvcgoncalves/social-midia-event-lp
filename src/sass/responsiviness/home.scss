@@ -1,3 +1,120 @@
+@media (min-width:1600px) {
+  .header{
+    height: 8rem;
+  
+    .navbar{
+      .register-button-div{
+        .register-button{
+          font-size: 2rem;
+        }
+        .register-arrow{
+          width: 1.75rem;
+          height: 1.75rem;
+        }
+      }
+
+      .logo{
+        width: 4rem;
+        height: auto;
+      }
+    }
+  }
+  
+  .main-content{
+    .start-block{
+      .impact-phrase-div{
+        .impact-phrase{
+          font-size: 1.75rem;
+        }
+      }
+  
+      .slogan{
+        .first-slogan-part,.second-slogan-part{
+          font-size: 7.5rem;
+        }
+        img{
+          width: 12rem;
+          height: auto;
+        }
+      }
+  
+      .see-more-button{
+        margin-top: 1.5rem;
+        font-size: 1.75rem;
+      }
+    }
+  
+    .speakers{
+  
+      h2{
+        font-size: 2.25rem;
+      }
+      .carousel{
+        .carousel-wrapper{
+          .carousel-items{
+            height: 100%;
+            width: 32rem;
+            h2{
+              font-size: 2.25rem;
+            }
+  
+            p{
+              font-size: 1.5rem;
+            }
+  
+            .speaker-img-div{
+              img{
+                width: 8rem;
+              }
+            }
+          } // . carousel-items
+        }
+      } // .carousel
+  
+      .carousel-nav{
+        gap: 1.5rem;
+        .carousel-label{
+          width: 2.25rem;
+          height: .4rem;
+        }
+      } // .carousel-nav
+
+      #next-button,#prev-button{
+        position: absolute;
+        bottom: 50%;
+        cursor: pointer;
+        img{
+          width: 2.5rem;
+          height: 2.75rem;
+        }
+      }
+    }
+
+    .event-description{
+    
+      h2{
+        font-size: 2.25rem;
+      }
+      .description-content{
+        max-width: 90%;
+        p{
+          width: 50%;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  } // .main-content
+
+  .footter{
+    .logo{
+      width: 4rem;
+    }
+    .display-flex{
+      font-size: 1.5rem;
+    }
+  }
+}
+
 @media (max-width: 1024px) {
   .main-content{
     .start-block{
@@ -273,7 +390,7 @@
 
 }
 
-@media (max-width:578px) {
+@media (max-width:425px) {
 
   .header{
     .navbar{
@@ -316,11 +433,11 @@
         font-size: 1.5rem;
       }
       .carousel{
-        height: 90%;
+        height: 95%;
         .carousel-wrapper{
           .carousel-items{
             height: 100%;
-            width: 15rem;
+            width: 90%;
 
             h2{
               font-size: 1.2rem;
@@ -397,8 +514,9 @@
       .carousel{
         height: 90%;
         .carousel-wrapper{
+          width: 100%;
           .carousel-items{
-            height: 85%;
+            height: 87.5%;
           } // . carousel-items
         }
       } // .carousel
