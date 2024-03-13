@@ -141,14 +141,14 @@
     }
   
     .speakers{
-      max-height: 25rem;
       h2{
         font-size: 1.5rem;
       }
+      min-height: 26rem;
       .carousel{
         .carousel-wrapper{
           .carousel-items{
-          height: 95%;
+          height: 90%;
 
             h2{
               font-size: 1.3rem;
@@ -175,10 +175,7 @@
       } // .carousel
   
       .carousel-nav{
-        gap: 1.5rem;
-        .carousel-label{
-          width: 1.75rem;
-        }
+        display: none;
       } // .carousel-nav
     }
   } // .main-content
@@ -211,12 +208,12 @@
   
     .speakers{
       margin-bottom: 2rem;
-  
+      min-height: 20rem;
       h2{
         font-size: 1.5rem;
       }
       .carousel{
-        height: 90%;
+        height: 100%;
         .carousel-wrapper{
           .carousel-items{
             height: 100%;
@@ -399,8 +396,6 @@
 
   .main-content{
     .start-block{
-      height: 55vh;
-      height: 55dvh;
       .impact-phrase-div{
         margin-right: .5rem;
         .impact-phrase{
